@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Kredit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Kredit</h1>
+<div class="jumbotron text-center">
+  <h4>Aplikacija kredit - Izračunajte kredit</h4>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+		<h3>Iznos kredita</h3>
+		<input type="number" class="form-control" id="unos1">
+		
+		<h3>Kamata postotak u %</h3>
+		<input type="number" class="form-control" id="unos2">
 
-<p>Iznos kredita</p>
-<input type="number" id="unos1">
+		<h3>Otplata mjeseci</h3>
+		<input type="number" class="form-control" id="unos3">
 
-<p>Kamata postotak u %</p>
-<input type="number" id="unos2">
-
-<p>Otplata mjeseci</p>
-<input type="number" id="unos3">
-
-<button onclick="fun()">Izračunaj</button>
-<p>Rezultat: </p><span id="rez"></span>
+		<h3>Visina plaće</h3>
+		<input type="number" class="form-control" id="unos4">
+		<hr>
+		<button onclick="fun()" class="btn btn-info">Izračunaj</button>
+		<h3>Rata kredita: <span id="rez1"></span></h3>
+		<h3>Ostatak plaće: <span id="rez2"></span></h3>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -1,6 +1,7 @@
 body {
   background-color: orange;
 }
-h1{
-	color:red;
+
+.jumbotron{
+    height: 50px;
 }
